@@ -57,14 +57,20 @@
 #define LATENCY    20       // audio buffer size in ms
 #define CHUNK_SIZE 0x100000 // slurp chunk size in bytes
 #define HELP       "\
-syntax: yuleq [options] files...\n\
+yu’egh leQ - compare audio files\n\
+https://github.com/chuvok/yuleq\n\
+syntax\n\
+    yuleq [options] files...\n\
+options\n\
     -h   show help\n\
     -r   blind test with reference\n\
     -b   blind test without reference\n\
     -l   list audio devices\n\
     -d n audio device index\n\
     -o n output samplerate\n\
-    -v   verbose output\n"
+    -v   verbose output\n\
+files\n\
+    one or more audio fiels\n"
 
 #define PANIC(...) do {printf(__VA_ARGS__); exit(1);} while (0)
 
