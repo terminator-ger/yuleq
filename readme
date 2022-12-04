@@ -20,8 +20,7 @@ Use the -b option to run a blind test with shuffled test items. The -r option do
 
 Nearly all common codecs are supported through ffmpeg. If you get a "command failed" error, ffprobe or ffmpeg might be missing from $PATH. Run with -v option for more details.
 
-Some operating systems use a low-quality resampler. Psulseaudio occasionally runs into trouble when it isn't using the audio device's native rate. The -r option mitigates this problem by using the high-quality ffmpeg resampler to convert to the specified output rate.
-
+Some operating systems or use a low-quality resampler. For example, there appears to be a bug in pulseaudio where the resampler occasionally produces a terrible clinking sound. The -r option mitigates this problem by using the high-quality ffmpeg resampler. The output rate should match that of the audio device.
 
 Build
 -----
